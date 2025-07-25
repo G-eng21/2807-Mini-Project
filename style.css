@@ -1,0 +1,50 @@
+/* The '*' CSS styling applies to all elements and can be used to override default settings for all elements */
+* {
+  box-sizing: border-box;
+  /*
+  margin: 0;
+  padding: 0;
+  */
+  /* The following formatting puts a red line around all HTML elements to support design/issue resolution */
+  /*
+  border: 1px solid red;
+  */
+}
+
+.f-format {
+  margin: 10px;
+  padding: 10px;
+  background-color: azure;
+}
+
+.f-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.f-item-list {
+  display: flex;
+  align-self: stretch;
+}
+
+/* CSS selector below uses chaining to embolden specific classes of span items */
+span.f-legend {
+  font-weight: bold;
+}
+
+.f-item {
+  padding-left: 10px;
+}
+
+.f-indent {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  font-size: large;
+}

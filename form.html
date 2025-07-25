@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- -->
+    <form>
+      <!-- User Set Up Information -->
+      <fieldset class="f-format f-user-info">
+        <legend>
+          <span class="f-legend"
+            >Please set up your user information ('*' indicates required
+            field):</span
+          >
+        </legend>
+
+        <div class="f-container">
+          <div class="f-item f-username">
+            <!-- <label> element provides field label within the form. 
+                The use of 'for' attribute is semantic to link it to the relevant <input> -->
+            <label for="username">Username*:</label>
+            <!-- <input> element specifies the input parameters
+                type - sets the type 
+                id - sets an id for the input 
+                name - gives the input a name (note. typically set this the same as the id) 
+                required - indicates that the user must fill in this field to submit the form -->
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="f-item f-username">
+            <label for="password">Password*:</label>
+            <input
+              type="password"
+              id="user-password"
+              name="user-password"
+              required
+            />
+          </div>
+        </div>
+        <div class="f-indent">
+          <label for="confirm-password">Confirm Password*:</label>
+          <input
+            type="password"
+            id="confirm-user-password"
+            name="confirm-user-password"
+            required
+          />
+        </div>
+
+        <br />
+        <div class="f-container">
+          <div class="f-item f-email">
+            <label for="email-address">Email Address*:</label>
+            <input
+              type="email"
+              id="email-address"
+              name="email-address"
+              required
+            />
+          </div>
+          <div class="f-item f-mobile">
+            <label for="mobile-number">Mobile Number*:</label>
+            <input
+              type="tel"
+              id="mobile-number"
+              name="mobile-number"
+              required
+            />
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Preferred Contact Details -->
+      <fieldset class="f-format f-personal-details">
+        <legend>
+          <span class="f-legend"
+            >Please provide your preferred contact method ('default'
+            email):</span
+          >
+        </legend>
+
+        <div>
+          <input
+            class="f-item"
+            type="radio"
+            id="email-option"
+            name="contact-method"
+            checked
+            required
+          />
+          <label class="f-item" for="email-option">Email</label>
+        </div>
+        <div>
+          <input
+            class="f-item"
+            type="radio"
+            id="text-option"
+            name="contact-method"
+          />
+          <label class="f-item" for="text-option">Text message</label>
+        </div>
+        <div>
+          <input
+            class="f-item"
+            type="radio"
+            id="mobile-option"
+            name="contact-method"
+          />
+          <label class="f-item" for="mobile-option">Call to mobile</label>
+        </div>
+        <div>
+          <input
+            class="f-item"
+            type="radio"
+            id="none-option"
+            name="contact-method"
+          />
+          <label class="f-item" for="none-option">None</label>
+        </div>
+      </fieldset>
+
+      <!-- Areas of Interest -->
+      <fieldset class="f-format f-user-info">
+        <legend>
+          <span class="f-legend"
+            >Please indicate all the areas you are interested in learning
+            about:</span
+          >
+        </legend>
+        <div>
+          <input class="f-item" type="checkbox" id="html" name="html" />
+          <label class="f-item" for="html">HTML elements</label>
+        </div>
+
+        <div>
+          <input
+            class="f-item"
+            type="checkbox"
+            id="css-basic"
+            name="css-basic"
+          />
+          <label class="f-item" for="css-basic">Basic CSS</label>
+        </div>
+
+        <div>
+          <input
+            class="f-item"
+            type="checkbox"
+            id="css-advanced"
+            name="css-advanced"
+          />
+          <label class="f-item" for="css-advanced"
+            >Advanced CSS (Flexbox / Grid)</label
+          >
+        </div>
+
+        <div>
+          <input
+            class="f-item"
+            type="checkbox"
+            id="css-frameworks"
+            name="css-frameworks"
+          />
+          <label class="f-item" for="HTML"
+            >CSS Frameworks (Bootstrap / Tailwind)</label
+          >
+        </div>
+
+        <div>
+          <input class="f-item" type="checkbox" id="js-basic" name="js-basic" />
+          <label class="f-item" for="js-basic">Basic Javascript</label>
+        </div>
+        <div>
+          <input
+            class="f-item"
+            type="checkbox"
+            id="js-advanced"
+            name="js-advanced"
+          />
+          <label class="f-item" for="js-advanced">Advanced Javascript</label>
+        </div>
+      </fieldset>
+      <!-- Submit button for the form -->
+      <input class="f-button f-indent" type="submit" value="Submit Details" />
+    </form>
+  </body>
+</html>
