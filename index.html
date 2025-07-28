@@ -3,7 +3,235 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Web Development Education</title>
+    <!-- Link to include Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- Link to include Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Navigation bar for the site -->
+    <header>
+      <div class="container-fluid"></div>
+      <nav class="navbar sticky-top navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand bg-light text-dark fw-bold w-25" href="#">
+            <img
+              class="me-2"
+              src="./images/spider-web.png"
+              alt="Spider web icon"
+            />
+            RGE Web Development
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+            aria-controls="navmenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar menu items -->
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Learning
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#learn-html">HTML</a></li>
+                  <li><a class="dropdown-item" href="#learn-css">CSS</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#learn-js"
+                      >Javascript (coming soon)</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#learn-setup">Set Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+          <!-- end of Navbar menu items -->
+        </div>
+      </nav>
+      <!-- end of Navbar -->
+    </header>
+    <main>
+      <!-- Hero section with image -->
+      <section>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="./images/code.jpg"
+              class="d-block mx-lg-auto img-fluid opacity-25 position-relative"
+              alt="Image of a computer screen with HTML code"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Build YOUR Skills Today!
+            </h1>
+            <p class="lead">
+              Web presence is a key part of creating company or individual
+              visibility and brand recognition.
+            </p>
+            <p class="lead">
+              Whilst frameworks and artificial intelligence are driving
+              simplification and automation, developing skills in web
+              technologies is essential to understanding future possibilities
+              and pathways.
+            </p>
+            <div>
+              <p
+                class="lead bg-dark text-light text-center fw-medium fst-italic mb-0 mx-5"
+              >
+                "I am always doing that which I cannot do, in order that I may
+                learn how to do it."<br />
+              </p>
+              <p class="text-center fst-italic">Pablo Picasso</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Hero with image section -->
+      <!-- Start of section for areas of learning -->
+      <section>
+        <h2>What you will learn:</h2>
+        <div class="container-fluid d-flex justify-content-evenly">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/html.png"
+              class="card-img-top h-50"
+              alt="html version 5 icon"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-bg-secondary" id="learn-html">
+                HTML Fundamentals
+              </h4>
+              <p class="card-text h-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                expedita!
+              </p>
+              <a href="#" class="btn btn-primary">Start learning</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/css.png"
+              class="card-img-top h-50"
+              alt="css version 3 icon"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-bg-secondary" id="learn-css">
+                CSS Essentials
+              </h4>
+              <p class="card-text h-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                nostrum quaerat numquam.
+              </p>
+              <a href="#" class="btn btn-primary">Start learning</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/js.png"
+              class="card-img-top h-50"
+              alt="javascript (ES6) icon"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-bg-secondary" id="learn-js">
+                Javascript Foundations
+              </h4>
+              <p class="card-text h-50">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+                quidem illum nemo sit ullam quis?
+              </p>
+              <a href="#" class="btn btn-primary">Start learning</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of learning access section-->
+      <!-- Start of setup section -->
+      <section>
+        <div class="container-fluid mt-3">
+          <div class="d-flex justify-content-center">
+            <h4 class="d-inline-block pe-3 my-2">New to coding?</h4>
+            <button
+              class="btn btn-primary btn-lg"
+              id="learn-setup"
+              type="button"
+            >
+              Learn how to set up your coding environment.
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section-->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2025 RGE</span>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a href="#"><i class="bi bi-twitter-x text-dark mx-1"></i></a>
+          <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+          <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+          <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Bootstrap Javascript link needed for bs components (Navbar) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
