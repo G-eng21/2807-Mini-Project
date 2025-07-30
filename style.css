@@ -6,8 +6,14 @@
   padding: 0;
   */
   /* The following formatting puts a red line around all HTML elements to support design/issue resolution */
-  /* */
+  /* 
   border: 1px solid red;
+  */
+}
+
+/* css for index.html */
+.nav-item:hover {
+  background-color: grey;
 }
 
 /* css for form.html */
