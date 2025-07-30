@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -17,12 +23,14 @@
             field):</span
           >
         </legend>
-
-        <div class="f-container">
-          <div class="f-item f-username">
+        <!-- This uses CSS Grid to set up the formatting -->
+        <div class="f-grid-container container-md m-0">
+          <div class="f-grid-item item-a">
             <!-- <label> element provides field label within the form. 
                 The use of 'for' attribute is semantic to link it to the relevant <input> -->
             <label for="username">Username*:</label>
+          </div>
+          <div class="f-grid-item item-b">
             <!-- <input> element specifies the input parameters
                 type - sets the type 
                 id - sets an id for the input 
@@ -30,8 +38,10 @@
                 required - indicates that the user must fill in this field to submit the form -->
             <input type="text" id="username" name="username" required />
           </div>
-          <div class="f-item f-username">
+          <div class="f-grid-item item-c">
             <label for="password">Password*:</label>
+          </div>
+          <div class="f-grid-item item-d">
             <input
               type="password"
               id="user-password"
@@ -39,21 +49,21 @@
               required
             />
           </div>
-        </div>
-        <div class="f-indent">
-          <label for="confirm-password">Confirm Password*:</label>
-          <input
-            type="password"
-            id="confirm-user-password"
-            name="confirm-user-password"
-            required
-          />
-        </div>
-
-        <br />
-        <div class="f-container">
-          <div class="f-item f-email">
+          <div class="f-grid-item item-e">
+            <label for="confirm-password">Confirm Password*:</label>
+          </div>
+          <div class="f-grid-item item-f">
+            <input
+              type="password"
+              id="confirm-user-password"
+              name="confirm-user-password"
+              required
+            />
+          </div>
+          <div class="f-grid-item item-g">
             <label for="email-address">Email Address*:</label>
+          </div>
+          <div class="f-grid-item item-h">
             <input
               type="email"
               id="email-address"
@@ -61,8 +71,10 @@
               required
             />
           </div>
-          <div class="f-item f-mobile">
+          <div class="f-grid-item item-i">
             <label for="mobile-number">Mobile Number*:</label>
+          </div>
+          <div class="f-grid-item item-j">
             <input
               type="tel"
               id="mobile-number"

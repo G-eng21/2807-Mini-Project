@@ -6,15 +6,70 @@
   padding: 0;
   */
   /* The following formatting puts a red line around all HTML elements to support design/issue resolution */
-  /*
+  /* 
   border: 1px solid red;
   */
+}
+
+/* css for index.html */
+.nav-item:hover {
+  background-color: grey;
+}
+
+/* css for form.html */
+
+nav img {
+  width: 30px;
+  margin-top: -5px;
 }
 
 .f-format {
   margin: 10px;
   padding: 10px;
   background-color: azure;
+}
+
+.item-a {
+  grid-area: username-prompt;
+}
+.item-b {
+  grid-area: username-input;
+}
+.item-c {
+  grid-area: password-prompt;
+}
+.item-d {
+  grid-area: password-input;
+}
+.item-e {
+  grid-area: confirm-password-prompt;
+}
+.item-f {
+  grid-area: confirm-password-input;
+}
+.item-g {
+  grid-area: email-prompt;
+}
+.item-h {
+  grid-area: email-input;
+}
+.item-i {
+  grid-area: mobile-prompt;
+}
+.item-j {
+  grid-area: mobile-input;
+}
+
+.f-grid-container {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 125px 1fr 150px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "username-prompt username-input password-prompt password-input"
+    ". . confirm-password-prompt confirm-password-input"
+    "email-prompt email-input mobile-prompt mobile-input";
+  gap: 5px;
 }
 
 .f-container {
@@ -47,4 +102,11 @@ input[type="submit"] {
   color: white;
   font-weight: 700;
   font-size: large;
+}
+
+/* css for learn.html */
+
+.section-divider {
+  border-bottom: 2px solid black;
+  margin: 10px 40px;
 }
