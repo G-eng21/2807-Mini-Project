@@ -97,7 +97,7 @@ span.f-legend {
   margin-left: 10px;
 }
 
-input[type="submit"] {
+.f-button {
   background-color: green;
   color: white;
   font-weight: 700;
