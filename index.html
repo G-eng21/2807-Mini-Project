@@ -65,10 +65,18 @@
                   Learning
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#learn-html">HTML</a></li>
-                  <li><a class="dropdown-item" href="#learn-css">CSS</a></li>
                   <li>
-                    <a class="dropdown-item" href="#learn-js"
+                    <a class="dropdown-item" href="./learn.html#learn-html"
+                      >HTML</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./learn.html#learn-css"
+                      >CSS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./learn.html#learn-js"
                       >Javascript (coming soon)</a
                     >
                   </li>
@@ -78,7 +86,7 @@
                 <a class="nav-link text-light" href="#learn-setup">Set Up</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Contact Us</a>
+                <a class="nav-link text-light" href="./form.html">Contact Us</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -99,39 +107,41 @@
     <main>
       <!-- Hero section with image -->
       <section>
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="./images/code.jpg"
-              class="d-block mx-lg-auto img-fluid opacity-25 position-relative"
-              alt="Image of a computer screen with HTML code"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              Build YOUR Skills Today!
-            </h1>
-            <p class="lead">
-              Web presence is a key part of creating company or individual
-              visibility and brand recognition.
-            </p>
-            <p class="lead">
-              Whilst frameworks and artificial intelligence are driving
-              simplification and automation, developing skills in web
-              technologies is essential to understanding future possibilities
-              and pathways.
-            </p>
-            <div>
-              <p
-                class="lead bg-dark text-light text-center fw-medium fst-italic mb-0 mx-5"
-              >
-                "I am always doing that which I cannot do, in order that I may
-                learn how to do it."<br />
+        <div class="container-fluid">
+          <div class="row flex-lg-row-reverse align-items-center g-5 pt-5 pb-3">
+            <div class="col-10 col-sm-8 col-lg-5 ps-2">
+              <img
+                src="./images/code.jpg"
+                class="d-block mx-lg-auto img-fluid opacity-25 position-relative"
+                alt="Image of a computer screen with HTML code"
+                width="600"
+                height="400"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-7">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                Build YOUR Skills Today!
+              </h1>
+              <p class="lead">
+                Web presence is a key part of creating company or individual
+                visibility and brand recognition.
               </p>
-              <p class="text-center fst-italic">Pablo Picasso</p>
+              <p class="lead">
+                Whilst frameworks and artificial intelligence are driving
+                simplification and automation, developing skills in web
+                technologies is essential to understanding future possibilities
+                and pathways.
+              </p>
+              <div>
+                <p
+                  class="lead bg-dark text-light text-center fw-medium fst-italic mb-0 mx-5"
+                >
+                  "I am always doing that which I cannot do, in order that I may
+                  learn how to do it."<br />
+                </p>
+                <p class="text-center fst-italic">Pablo Picasso</p>
+              </div>
             </div>
           </div>
         </div>
@@ -139,8 +149,10 @@
       <!-- End of Hero with image section -->
       <!-- Start of section for areas of learning -->
       <section>
-        <h2>What you will learn:</h2>
-        <div class="container-fluid d-flex justify-content-evenly">
+        <div class="container-fluid">
+          <h2>What you will learn:</h2>
+        </div>
+        <div class="container-fluid d-flex justify-content-evenly pb-3">
           <div class="card" style="width: 18rem">
             <img
               src="./images/html.png"
@@ -148,14 +160,14 @@
               alt="html version 5 icon"
             />
             <div class="card-body">
-              <h4 class="card-title text-bg-secondary" id="learn-html">
-                HTML Fundamentals
-              </h4>
-              <p class="card-text h-50">
+              <h4 class="card-title text-bg-dark ps-2">HTML Fundamentals</h4>
+              <p class="card-text h-50 ps-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
                 expedita!
               </p>
-              <a href="#" class="btn btn-primary">Start learning</a>
+              <a href="./learn.html#learn-html" class="btn btn-primary btn-lg"
+                >Start learning</a
+              >
             </div>
           </div>
           <div class="card" style="width: 18rem">
@@ -165,14 +177,14 @@
               alt="css version 3 icon"
             />
             <div class="card-body">
-              <h4 class="card-title text-bg-secondary" id="learn-css">
-                CSS Essentials
-              </h4>
-              <p class="card-text h-50">
+              <h4 class="card-title text-bg-dark ps-2">CSS Essentials</h4>
+              <p class="card-text h-50 ps-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
                 nostrum quaerat numquam.
               </p>
-              <a href="#" class="btn btn-primary">Start learning</a>
+              <a href="./learn.html#learn-css" class="btn btn-primary btn-lg"
+                >Start learning</a
+              >
             </div>
           </div>
           <div class="card" style="width: 18rem">
@@ -182,14 +194,25 @@
               alt="javascript (ES6) icon"
             />
             <div class="card-body">
-              <h4 class="card-title text-bg-secondary" id="learn-js">
-                Javascript Foundations
+              <h4 class="card-title text-bg-dark ps-2">
+                Javascript Foundation
               </h4>
-              <p class="card-text h-50">
+              <!-- Commented out pending build of section 
+               <p class="card-text h-50 ps-2">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
                 quidem illum nemo sit ullam quis?
               </p>
-              <a href="#" class="btn btn-primary">Start learning</a>
+            -->
+              <img
+                src="./images/coming-soon.jpeg"
+                class="img-fluid"
+                alt="Image of 'coming soon' banner"
+              />
+              <a
+                href="./learn.html#learn-js"
+                class="btn btn-secondary btn-lg disabled"
+                >Start learning</a
+              >
             </div>
           </div>
         </div>
@@ -201,7 +224,7 @@
           <div class="d-flex justify-content-center">
             <h4 class="d-inline-block pe-3 my-2">New to coding?</h4>
             <button
-              class="btn btn-primary btn-lg"
+              class="btn btn-secondary btn-lg"
               id="learn-setup"
               type="button"
             >
@@ -213,7 +236,7 @@
     </main>
     <!-- Footer section-->
     <footer
-      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
     >
       <div class="col-md-4 d-flex align-items-center">
         <span class="mb-3 mb-md-0 text-body-secondary">© 2025 RGE</span>

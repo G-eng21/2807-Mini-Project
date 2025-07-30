@@ -6,12 +6,15 @@
   padding: 0;
   */
   /* The following formatting puts a red line around all HTML elements to support design/issue resolution */
-  /**/
+  /* */
   border: 1px solid red;
 }
 
+/* css for form.html */
+
 nav img {
   width: 30px;
+  margin-top: -5px;
 }
 
 .f-format {
@@ -93,4 +96,11 @@ input[type="submit"] {
   color: white;
   font-weight: 700;
   font-size: large;
+}
+
+/* css for learn.html */
+
+.section-divider {
+  border-bottom: 2px solid black;
+  margin: 10px 40px;
 }
